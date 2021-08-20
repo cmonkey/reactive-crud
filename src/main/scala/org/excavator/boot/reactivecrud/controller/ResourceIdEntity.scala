@@ -1,3 +1,5 @@
-package org.excavator.boot.reactivecrud.controller class ResourceIdEntity {
+package org.excavator.boot.reactivecrud.controller
+
+case class ResourceIdEntity(value: Long) {
 
 }
