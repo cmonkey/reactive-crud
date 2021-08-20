@@ -1,1 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
 
+H2:
+  console:
+    enabled: true
+    path: /h2
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///cataloguedb
+    username: sa
+    password:
+    initialization-mode: always
